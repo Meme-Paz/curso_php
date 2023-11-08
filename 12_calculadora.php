@@ -18,8 +18,7 @@
 </html>
 
 <?php
-    if (isset($_GET['num1']) && isset($_GET['num2']) 
-        && is_numeric($_GET['num1']) && is_numeric($_GET['num2'])) {
+    if (isset($_GET['num1']) && isset($_GET['num2'])) {
         
         if (empty($_GET['num1']) || empty($_GET['num2'])) {
             echo 'Ingrese numeros validos';
@@ -27,7 +26,7 @@
             $num1 = $_GET['num1'];
             $num2 = $_GET['num2'];
             echo 'Resultado: ', $num1 + $num2;
-        }        
+        }   
         
     }
 ?>
