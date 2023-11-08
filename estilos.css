@@ -37,7 +37,7 @@ body{
     transition: 0.25s;
 }
 
-.caja input[type = "number"]:focus,.caja input[type = "text"]:number{
+.caja input[type = "number"]:focus, .caja input[type = "number"]:focus {
     width: 250px;
     border-color: #06d6a0;
 }
@@ -66,3 +66,4 @@ body{
     color: #ffd166;
     font-size: 18px;
 }
+
