@@ -6,14 +6,14 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="index.php" method="POST">
+    <form action="18_get_post.php" method="POST">
         <div>
             <label for="nombre">Nombre</label>
             <input type="text" id="nombre" name="nombre">
         </div>
         <br>
         <label for="asignatura">Asignatura</label>
-        <select name="asignatura" id="asignatura">
+        <select name="asignatura[]" id="asignatura" multiple>
             <option value="Ingles">Ingles</option>
             <option value="Matematicas">Matematicas</option>
             <option value="Ciencia">Ciencia</option>
@@ -21,7 +21,13 @@
         </select>
         <br><br>
         <label for="opcion1">
-            <input type="checkbox" name="frutas" id="opcion1" value="Manzana">Manzana
+            <input type="checkbox" name="frutas[]" id="opcion1" value="Manzana">Manzana
+        </label>
+        <label for="opcion2">
+            <input type="checkbox" name="frutas[]" id="opcion2" value="Mango">Mango
+        </label>
+        <label for="opcion3">
+            <input type="checkbox" name="frutas[]" id="opcion3" value="Melon">Melon
         </label>
         <br><br><br>
         <button type="submit">Enviar</button>
